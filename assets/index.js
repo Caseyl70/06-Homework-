@@ -1,9 +1,10 @@
 // Going to create an On Click for the buttons
-$("#Memes").on("click", ".office", ".NFL", ".NHL", ".NBA", ".Marvel", function() {
+$("#Memes").on("click", ".Memeify", function() {
     var input = $(this).attr("data-meme");
     // query url will be where the data is coming from using the giphy api
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + keyword + "&api_key=L8YGVZbCd7HXg8g9n320OoCvUbKe9IIt&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + input + "&api_key=L8YGVZbCd7HXg8g9n320OoCvUbKe9IIt&limit=10";
     console.log("input");
+
     // Using ajax call to use the Giphy API
 
     $.ajax({
@@ -36,5 +37,7 @@ $("#Memes").on("click", ".office", ".NFL", ".NHL", ".NBA", ".Marvel", function()
             // Inserting A place where the images will appear.
             $("#FUNNY").prepend(memeImage);
         }
-    })
-})
+    });
+});
+
+// Creating a Fucntionality for the Animation!
