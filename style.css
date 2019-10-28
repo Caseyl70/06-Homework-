@@ -1,7 +1,37 @@
 button {
-    size: 10px;
-    padding: 30px;
-    background-color: black;
-    color: azure;
-    size: 50px;
+    padding: 20px;
+    background: grey;
+    color: black;
+    width: 600px;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+body {
+    background-size: 1700px;
+    background-image: url(https://images.unsplash.com/photo-1483706571191-85c0c76b1947?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+}
+
+h1 {
+    text-align: center;
+    background-color: grey;
+    color: black;
+    width: 1212px;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 100px;
+}
+
+h2 {
+    padding: 20px;
+    margin-left: 10px;
+    background-color: grey;
+    color: black;
+    width: 599px;
+    font-size: 30px;
+}
+
+.searching {
+    background-color: grey;
+    color: white;
 }

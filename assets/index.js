@@ -39,5 +39,14 @@ $("#Memes").on("click", ".Memeify", function() {
         }
     });
 });
-
+// adding submit button functionality for user to add own memes
+$("#submit").on("click", function() {
+    var create = $(".searching").val();
+    var newCreate = $("<button>").attr("data-meme", create).addClass("Memes").text(create);
+    console.log(create);
+    $(".Memes").append(newCreate);
+});
 // Creating a Fucntionality for the Animation!
+$("#FUNNY").on("click", function() {
+
+})
