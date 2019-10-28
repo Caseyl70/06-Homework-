@@ -1,5 +1,5 @@
 // Going to create an On Click for the buttons
-$("#Memes").on("click", ".Memeify", function() {
+$("#Memes").on("click", ".Memeify", function(event) {
     var input = $(this).attr("data-meme");
     // query url will be where the data is coming from using the giphy api
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + input + "&api_key=L8YGVZbCd7HXg8g9n320OoCvUbKe9IIt&limit=10";
@@ -41,10 +41,11 @@ $("#Memes").on("click", ".Memeify", function() {
 });
 // adding submit button functionality for user to add own memes
 $("#submit").on("click", function() {
+
     var create = $(".searching").val();
-    var newCreate = $("<button>").attr("data-meme", create).addClass("Memes").text(create);
+    var newCreate = $("<button>").attr("data-meme", create).addClass("Memeify").text(create);
     console.log(create);
-    $(".Memes").append(newCreate);
+    $("#Memes").append(newCreate);
 });
 // Creating a Fucntionality for the Animation!
 $("#FUNNY").on("click", function() {
